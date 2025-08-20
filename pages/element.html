@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element</title>
+    <!-- Style css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Google web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap">
+
+    <!-- Bootstrap CSS & Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+
+    <!-- libraries sheet -->
+    <link rel="stylesheet" href="../assets/lib/owlcarousel/assets/owl.carousel.min.css">
+</head>
+
+<body>
+    <!-- Button scroll to top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+    <!-- End of Button scroll to top -->
+    <div class="container-fluid position-relative bg-white d-flex p-0">
+        <!-- Sidebar start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-light navbar-light">
+                <a href="../index.html" class="navbar-brand mx-4 mb-3">
+                    <h4 class="text-primary"><i class="fa fa-hashtag me-2"></i>DASHBOARD</h4>
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                        <img src="../assets/img/pf1.jpg"
+                            class="rounded-circle" style="width: 30px;" alt="">
+                        <div
+                            class="bg-success rounded-circle border-2 border-white position-absolute end-0 bottom-0 p-1">
+                        </div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">Justin Bieber</h6>
+                        <span>Admin</span>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    <a href="../index.html" class="nav-item nav-link active">
+                        <i class="fa fa-tachometer-alt me-2"></i>Dashboard
+                    </a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-laptop me-2"></i>Elements
+                        </a>
+                        <div class="dropdown-menu bg-transparent border-0" data-bs-proper="none">
+                            <a href="button.html" class="dropdown-item">Buttons</a>
+                            <a href="typography.html" class="dropdown-item">Typography</a>
+                            <a href="element.html" class="dropdown-item">Other Elements</a>
+                        </div>
+                    </div>
+                    <a href="widget.html" class="nav-item nav-link">
+                        <i class="fa fa-th me-2"></i>Widgets
+                    </a>
+                    <a href="form.html" class="nav-item nav-link">
+                        <i class="fa fa-keyboard me-2"></i>Forms
+                    </a>
+                    <a href="table.html" class="nav-item nav-link">
+                        <i class="fa fa-table me-2"></i>Tables
+                    </a>
+                    <a href="chart.html" class="nav-item nav-link">
+                        <i class="fa fa-chart-bar me-2"></i>Charts
+                    </a>
+                    <div class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="far fa-file-alt me-2"></i>Pages
+                        </a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="signin.html" class="dropdown-item">Sign In</a>
+                            <a href="signup.html" class="dropdown-item">Sign Up</a>
+                            <a href="four0four.html" class="dropdown-item">404 Error</a>
+                            <a href="blankPage.html" class="dropdown-item">Blank Page</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- End of Sidebar -->
+    </div>
+
+    <div class="content">
+        <!-- Navbar start -->
+        <nav class="navbar navbar-expand bg-light sticky-top px-4 py-0">
+            <a href="" class="navbar-brand d-flex d-lg-none me-4">
+                <h2 class="text-primary mb-0">
+                    <i class="fa fa-hashtag"></i>
+                </h2>
+            </a>
+            <a href="#" class="sidebar-toggler flex-shrink-0" data-bs-toggle="sidebar">
+                <i class="fa fa-bars"></i>
+            </a>
+            <form href="" class="d-none d-md-flex ms-4">
+                <input type="search" class="form-control border-0" placeholder="Search">
+            </form>
+            <div class="navbar-nav align-items-center ms-auto">
+                <div class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="fa fa-envelope me-lg-2"></i>
+                        <span class="d-none d-lg-inline-flex">Message</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end-bg-light border-0 rounded-bottom m-0">
+                        <a href="" class="dropdown-item">
+                            <div class="d-flex align-items-center">
+                                <img src="../assets/img/pf1.jpg"
+                                    class="rounded-circle" style="width: 30px;" alt="">
+                                <div class="ms-2">
+                                    <h6>
+                                        Kitty send you a message
+                                    </h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="fa fa-bell me-lg-2"></i>
+                        <span class="d-none d-lg-inline-flex">Notification</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item">
+                            <h6 class="fw-normal mb-0">
+                                Profile Updated
+                            </h6>
+                            <small>15 minutes ago</small>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            <h6 class="fw-normal mb-0">
+                                New user added
+                            </h6>
+                            <small>55 minutes ago</small>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            See all Notification
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <img src="../assets/img/pf1.jpg"
+                            class="rounded-circle me-lg-2" style="width: 30px;" alt="">
+                        <span class="d-none d-lg-inline-flex">Justin Bieber</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item">My profile</a>
+                        <a href="#" class="dropdown-item">Setting</a>
+                        <a href="#" class="dropdown-item">Log out</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar end -->
+
+        <!-- Element start -->
+        <div class="container-fluid pt-4 px-4">
+            <div class="row g-4">
+                <!-- Basic Alert start -->
+                <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light rounded h-100 p-4">
+                        <h6 class="mb-4">Basic Alert</h6>
+                        <div class="alert alert-primary" role="alert">
+                            A simple primary alert—check it out!
+                        </div>
+                        <div class="alert alert-secondary" role="alert">
+                            A simple secondary alert—check it out!
+                        </div>
+                        <div class="alert alert-success" role="alert">
+                            A simple success alert—check it out!
+                        </div>
+                        <div class="alert alert-danger" role="alert">
+                            A simple danger alert—check it out!
+                        </div>
+                        <div class="alert alert-warning" role="alert">
+                            A simple warning alert—check it out!
+                        </div>
+                        <div class="alert alert-info" role="alert">
+                            A simple info alert—check it out!
+                        </div>
+                        <div class="alert alert-light" role="alert">
+                            A simple light alert—check it out!
+                        </div>
+                        <div class="alert alert-dark" role="alert">
+                            A simple dark alert—check it out!
+                        </div>
+                    </div>
+                </div>
+                <!-- Basic Alert end -->
+
+                <!-- Icons & Dismissing Alert start -->
+                <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light rounded h-100 p-4">
+                        <h6 class="mb-4">Icons & Dismissing Alert</h6>
+                        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                            <i class="fa fa-exclamation-circle me-2"></i>
+                            An icon & dismissing primary alert—check it out!
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                            <i class="fa fa-exclamation-circle me-2"></i>
+                            An icon & dismissing secondary alert—check it out!
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <i class="fa fa-exclamation-circle me-2"></i>
+                            An icon & dismissing success alert—check it out!
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <i class="fa fa-exclamation-circle me-2"></i>
+                            An icon & dismissing danger alert—check it out!
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            <i class="fa fa-exclamation-circle me-2"></i>
+                            An icon & dismissing warning alert—check it out!
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <div class="alert alert-info alert-dismissible fade show" role="alert">
+                            <i class="fa fa-exclamation-circle me-2"></i>
+                            An icon & dismissing info alert—check it out!
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <div class="alert alert-light alert-dismissible fade show" role="alert">
+                            <i class="fa fa-exclamation-circle me-2"></i>
+                            An icon & dismissing light alert—check it out!
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                            <i class="fa fa-exclamation-circle me-2"></i>
+                            An icon & dismissing dark alert—check it out!
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Icons & Dismissing Alert end -->
+
+                <!-- Basic Accordion start -->
+                <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light rounded h-100 p-4">
+                        <h6 class="mb-4">Basic Accordion</h6>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Accordion Item #1
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item’s accordion body.</strong> It is shown by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It’s also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Accordion Item #2
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item’s accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It’s also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Accordion Item #3
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item’s accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It’s also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Basic Accordion end -->
+
+                <!-- Flush Accordion start -->
+                <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light rounded h-100 p-4">
+                        <h6 class="mb-4">Flush Accordion</h6>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Accordion Item #1
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        first item’s accordion body.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Accordion Item #2
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        second item’s accordion body. Let’s imagine this being filled with some actual
+                                        content.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        Accordion Item #3
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        third item’s accordion body. Nothing more exciting happening here in terms of
+                                        content, but just filling up the space to make it look, at least at first
+                                        glance, a bit more representative of how this would look in a real-world
+                                        application.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Flush Accordion end -->
+
+                <!-- Basic nav & tab start -->
+                <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light rounded h-100 p-4">
+                        <h6 class="mb-4">Basic Nav & Tab</h6>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="disabled-tab" data-bs-toggle="tab"
+                                    data-bs-target="#disabled-tab-pane" type="button" role="tab"
+                                    aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">Diam sea sanctus amet clita lorem sit sanctus ea
+                                elitr. Lorem rebum est elitr eos. Dolores aliquyam sadipscing dolor sadipscing accusam
+                                voluptua tempor. Sanctus elitr sanctus diam tempor diam aliquyam et labore clita, ipsum
+                                takimata amet est erat, accusam takimata gubergren sea sanctus duo nonumy. Ipsum diam
+                                ipsum sit kasd.</div>
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Commodi, sed sapiente quisquam velit amet nisi, nemo rerum eos
+                                adipisci soluta perferendis voluptate repudiandae vero alias excepturi corrupti cum,
+                                veniam dolores?</div>
+                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                aria-labelledby="contact-tab" tabindex="0">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Ipsa corporis quod, eius nihil, illum tenetur velit maiores
+                                perspiciatis quibusdam quo beatae est architecto ad! Corrupti dicta officiis quos nisi
+                                necessitatibus?</div>
+                            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel"
+                                aria-labelledby="disabled-tab" tabindex="0">...</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Basic nav & tab end -->
+
+                <!-- Pills nav & tab start -->
+                <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light rounded h-100 p-4">
+                        <h6 class="mb-4">Pills Nav & Tab</h6>
+                        <ul class="nav nav-pills" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="homee-tab" data-bs-toggle="tab"
+                                    data-bs-target="#homee-tab-pane" type="button" role="tab"
+                                    aria-controls="homee-tab-pane" aria-selected="true">Home</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profilee-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profilee-tab-pane" type="button" role="tab"
+                                    aria-controls="profilee-tab-pane" aria-selected="false">Profile</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contactt-tab" data-bs-toggle="tab"
+                                    data-bs-target="#contactt-tab-pane" type="button" role="tab"
+                                    aria-controls="contactt-tab-pane" aria-selected="false">Contact</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="disabledd-tab" data-bs-toggle="tab"
+                                    data-bs-target="#disabledd-tab-pane" type="button" role="tab"
+                                    aria-controls="disabledd-tab-pane" aria-selected="false" disabled>Disabled</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="homee-tab-pane" role="tabpanel"
+                                aria-labelledby="homee-tab" tabindex="0">Diam sea sanctus amet clita lorem sit sanctus
+                                ea
+                                elitr. Lorem rebum est elitr eos. Dolores aliquyam sadipscing dolor sadipscing accusam
+                                voluptua tempor. Sanctus elitr sanctus diam tempor diam aliquyam et labore clita, ipsum
+                                takimata amet est erat, accusam takimata gubergren sea sanctus duo nonumy. Ipsum diam
+                                ipsum sit kasd.</div>
+                            <div class="tab-pane fade" id="profilee-tab-pane" role="tabpanel"
+                                aria-labelledby="profilee-tab" tabindex="0">Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Commodi, sed sapiente quisquam velit amet nisi, nemo rerum eos
+                                adipisci soluta perferendis voluptate repudiandae vero alias excepturi corrupti cum,
+                                veniam dolores?</div>
+                            <div class="tab-pane fade" id="contactt-tab-pane" role="tabpanel"
+                                aria-labelledby="contactt-tab" tabindex="0">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Ipsa corporis quod, eius nihil, illum tenetur velit maiores
+                                perspiciatis quibusdam quo beatae est architecto ad! Corrupti dicta officiis quos nisi
+                                necessitatibus?</div>
+                            <div class="tab-pane fade" id="disabledd-tab-pane" role="tabpanel"
+                                aria-labelledby="disabledd-tab" tabindex="0">...</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pills nav & tab end -->
+
+                <!-- Vertical Navs & Tab start -->
+                <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light rounded h-100 p-4">
+                        <h6 class="mb-4">Vertical Nav & Tab</h6>
+                        <div class="d-flex align-items-start">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
+                                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                                    aria-selected="true">
+                                    Home
+                                </button>
+                                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-profile" type="button" role="tab"
+                                    aria-controls="v-pills-profile" aria-selected="false">
+                                    Profile
+                                </button>
+                                <button class="nav-link" id="v-pills-msg-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-msg" type="button" role="tab" aria-controls="v-pills-msg"
+                                    aria-selected="false">
+                                    Messages
+                                </button>
+                                <button class="nav-link" id="v-pills-set-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-set" type="button" role="tab" aria-controls="v-pills-set"
+                                    aria-selected="false">
+                                    Settings
+                                </button>
+                            </div>
+
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                    aria-labelledby="v-pills-home-tab" tabindex="0">
+                                    Home content here...
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                    aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                    Profile content here...
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-msg" role="tabpanel"
+                                    aria-labelledby="v-pills-msg-tab" tabindex="0">
+                                    Messages content here...
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-set" role="tabpanel"
+                                    aria-labelledby="v-pills-set-tab" tabindex="0">
+                                    Settings content here...
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Vertical Navs & Tab end -->
+
+                <!-- Progress start -->
+                 <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light rounded h-100 p-4">
+                        <h6 class="mb-4">Progress</h6>
+                        <div class="pg-bar mb-3">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
+                            </div>
+                        </div>
+                        <div class="pg-bar mb-3">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                            </div>
+                        </div>
+                        <div class="pg-bar mb-3">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="pg-bar mb-3">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="pg-bar mb-3">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Progress end -->
+            </div>
+        </div>
+        <!-- Element end -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid pt-4 px-4">
+            <div class="bg-light">
+                <div class="row text-center">
+                    <div class="col-12">
+                        &copy; <a href="#">ADMIN DASHBOARD</a>, All Right Reserved.
+                        <br>
+                        Designed By <a href="#">Tepy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="../assets/lib/chart/chart.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"
+        integrity="sha512-k6/Bkb8Fxf/c1Tkyl39yJwcOZ1P4cRrJu77p83zJjN2Z55prbFHxPs9vN7q3l3+tSMGPDdoH51AEU8Vgo1cgAA=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css"
+        integrity="sha512-3JRrEUwaCkFUBLK1N8HehwQgu8e23jTH4np5NHOmQOobuC4ROQxFwFgBLTnhcnQRMs84muMh0PnnwXlPq5MGjg=="
+        crossorigin="anonymous" />
+    <script src="../assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../assets/script.js"></script>
+</body>
+
+</html>

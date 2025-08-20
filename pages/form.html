@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- Style css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Google web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap">
+
+    <!-- Bootstrap CSS & Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+
+    <!-- libraries sheet -->
+    <link rel="stylesheet" href="../assets/lib/owlcarousel/assets/owl.carousel.min.css">
+</head>
+
+<body>
+    <!-- Button scroll to top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+    <!-- End of Button scroll to top -->
+    <div class="container-fluid position-relative bg-white d-flex p-0">
+        <!-- Sidebar start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-light navbar-light">
+                <a href="../index.html" class="navbar-brand mx-4 mb-3">
+                    <h4 class="text-primary"><i class="fa fa-hashtag me-2"></i>DASHBOARD</h4>
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                        <img src="../assets/img/pf1.jpg"
+                            class="rounded-circle" style="width: 30px;" alt="">
+                        <div
+                            class="bg-success rounded-circle border-2 border-white position-absolute end-0 bottom-0 p-1">
+                        </div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">Justin Bieber</h6>
+                        <span>Admin</span>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    <a href="../index.html" class="nav-item nav-link active">
+                        <i class="fa fa-tachometer-alt me-2"></i>Dashboard
+                    </a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-laptop me-2"></i>Elements
+                        </a>
+                        <div class="dropdown-menu bg-transparent border-0" data-bs-proper="none">
+                            <a href="button.html" class="dropdown-item">Buttons</a>
+                            <a href="typography.html" class="dropdown-item">Typography</a>
+                            <a href="element.html" class="dropdown-item">Other Elements</a>
+                        </div>
+                    </div>
+                    <a href="widget.html" class="nav-item nav-link">
+                        <i class="fa fa-th me-2"></i>Widgets
+                    </a>
+                    <a href="form.html" class="nav-item nav-link">
+                        <i class="fa fa-keyboard me-2"></i>Forms
+                    </a>
+                    <a href="table.html" class="nav-item nav-link">
+                        <i class="fa fa-table me-2"></i>Tables
+                    </a>
+                    <a href="chart.html" class="nav-item nav-link">
+                        <i class="fa fa-chart-bar me-2"></i>Charts
+                    </a>
+                    <div class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="far fa-file-alt me-2"></i>Pages
+                        </a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="signin.html" class="dropdown-item">Sign In</a>
+                            <a href="signup.html" class="dropdown-item">Sign Up</a>
+                            <a href="four0four.html" class="dropdown-item">404 Error</a>
+                            <a href="blankPage.html" class="dropdown-item">Blank Page</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- End of Sidebar -->
+    </div>
+
+    <div class="content">
+        <!-- Navbar start -->
+        <nav class="navbar navbar-expand bg-light sticky-top px-4 py-0">
+            <a href="" class="navbar-brand d-flex d-lg-none me-4">
+                <h2 class="text-primary mb-0">
+                    <i class="fa fa-hashtag"></i>
+                </h2>
+            </a>
+            <a href="#" class="sidebar-toggler flex-shrink-0" data-bs-toggle="sidebar">
+                <i class="fa fa-bars"></i>
+            </a>
+            <form href="" class="d-none d-md-flex ms-4">
+                <input type="search" class="form-control border-0" placeholder="Search">
+            </form>
+            <div class="navbar-nav align-items-center ms-auto">
+                <div class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="fa fa-envelope me-lg-2"></i>
+                        <span class="d-none d-lg-inline-flex">Message</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end-bg-light border-0 rounded-bottom m-0">
+                        <a href="" class="dropdown-item">
+                            <div class="d-flex align-items-center">
+                                <img src="../assets/img/pf1.jpg"
+                                    class="rounded-circle" style="width: 30px;" alt="">
+                                <div class="ms-2">
+                                    <h6>
+                                        Kitty send you a message
+                                    </h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="fa fa-bell me-lg-2"></i>
+                        <span class="d-none d-lg-inline-flex">Notification</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item">
+                            <h6 class="fw-normal mb-0">
+                                Profile Updated
+                            </h6>
+                            <small>15 minutes ago</small>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            <h6 class="fw-normal mb-0">
+                                New user added
+                            </h6>
+                            <small>55 minutes ago</small>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            See all Notification
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <img src="../assets/img/pf1.jpg"
+                            class="rounded-circle me-lg-2" style="width: 30px;" alt="">
+                        <span class="d-none d-lg-inline-flex">Justin Bieber</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item">My profile</a>
+                        <a href="#" class="dropdown-item">Setting</a>
+                        <a href="#" class="dropdown-item">Log out</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar end -->
+
+        <!-- Form start -->
+        <div class="container-fluid pt-4 px-4">
+            <div class="row g-4">
+                <!-- Basic Form start -->
+                <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light rounded h-100 p-4">
+                        <h6 class="mb-4">Basic Form</h6>
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="email1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email1" placeholder="Enter your email...">
+                                <div id="emailHelp" class="form-text">
+                                    We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pw1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="pw1"
+                                    placeholder="Enter your password...">
+                            </div>
+                            <div class="mb-3">
+                                <input type="checkbox" class="form-check-input" id="check1">
+                                <label class="form-check-label" for="check1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Basic Form end -->
+
+                <!-- Horizontal form start -->
+                <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light rounded h-100 p-4">
+                        <h6 class="mb-4">Horizontal Form</h6>
+                        <form action="">
+                            <div class="row mb-3">
+                                <label for="email2" class="form-label col-sm-2">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="email2"
+                                        placeholder="Enter your email...">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="pw2" class="form-label col-sm-2">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="pw2"
+                                        placeholder="Enter your password...">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <fieldset class="row mb-3">
+                                    <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                id="gridRadio1" value="option1" checked>
+                                            <label class="form-check-label" for="gridRadio1">First radio</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                id="gridRadio2" value="option2">
+                                            <label class="form-check-label" for="gridRadio2">Second radio</label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="row mb-3">
+                                <legend class="col-form-label col-sm-2 pt-0">Checkbox</legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="check2">
+                                        <label class="form-check-label" for="check2">Check me out</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Horizontal form end -->
+
+                <!-- Floating label start -->
+                <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light rounded h-100 p-4">
+                        <h6 class="mb-4">Floating Label</h6>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="floatingSelect">
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Floating label select menu</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <!-- Textarea -->
+                            <textarea class="form-control" id="floatingTextarea2" style="height: 100">
+                             </textarea>
+                            <label for="floatingTextarea2">Comments</label>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Floating label end -->
+
+                <!-- File Input start -->
+                <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light rounded h-100 p-4">
+                        <h6 class="mb-4">Floating Label</h6>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Default file input example</label>
+                            <input type="file" class="form-control" id="formFile">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+                            <input type="file" class="form-control" id="formFileMultiple" multiple>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFileSm" class="form-label">Small File Input Example</label>
+                            <input type="file" class="form-control form-control-sm" id="formFileSm">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFileLg" class="form-label">Small File Input Example</label>
+                            <input type="file" class="form-control form-control-lg" id="formFileLg">
+                        </div>
+                    </div>
+                </div>
+                <!-- File Input end -->
+
+                <!-- Select start -->
+                <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light rounded h-100 p-4">
+                        <h6 class="mb-4">Select</h6>
+                        <select name="" id="" class="form-select form-select-sm mb-3"
+                            aria-label=".form-select-sm example">
+                            <option value="" selected>Open this select option</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+
+                        <select name="" id="" class="form-select mb-3" aria-label="Default select example">
+                            <option value="" selected>Open this select option</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+
+                        <select name="" id="" class="form-select form-select-lg mb-3"
+                            aria-label=".form-select-lg example">
+                            <option value="" selected>Open this select option</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+
+                        <select name="" id="" class="form-select" aria-label="multiple select example">
+                            <option value="" selected>Open this select option</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+
+                    </div>
+                </div>
+                <!-- Select end -->
+
+                <!-- Check, radio, switch start -->
+                <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light rounded h-100 p-4">
+                        <h6 class="mb-4">Check, radio & switch</h6>
+                        <div class="form-check">
+                            <input type="checkbox" id="flexCheckDefault" class="form-check-input">
+                            <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="checkDefault" class="form-check-input" checked>
+                            <label class="form-check-label" for="checkDefault">Checked checkbox</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" id="check1" class="form-check-input">
+                            <label class="form-check-label" for="check1">1</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" id="check2" class="form-check-input">
+                            <label class="form-check-label" for="check2">2</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" id="check3" class="form-check-input" disabled>
+                            <label class="form-check-label" for="check1">3 (disable)</label>
+                        </div>
+
+                        <hr>
+
+                        <div class="form-check">
+                            <input type="radio" id="flexRadioDefault" class="form-check-input">
+                            <label class="form-check-label" for="flexRadioDefault">Default Radio</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" id="radioDefault" class="form-check-input" checked>
+                            <label class="form-check-label" for="radioDefault">Radio Checked</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input type="radio" id="radio1" class="form-check-input">
+                            <label class="form-check-label" for="radio1">1</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input type="radio" id="radio2" class="form-check-input">
+                            <label class="form-check-label" for="radio2">2</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input type="radio" id="radio3" class="form-check-input" disabled>
+                            <label class="form-check-label" for="check1">3 (disable)</label>
+                        </div>
+                        <hr>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Switch</label>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Switch Checked</label>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckD" disabled>
+                            <label class="form-check-label" for="flexSwitchCheckD">Switch</label>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedD" checked
+                                disabled>
+                            <label class="form-check-label" for="flexSwitchCheckCheckedD">Switch Checked</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Check, radio, switch end -->
+
+                <!-- Input Group start -->
+
+                <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light rounded h-100 p-4">
+                        <h6 class="mb-4">Input Group</h6>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                                @
+                            </span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email" aria-label="Username"
+                                aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">
+                                @gmail.com
+                            </span>
+                        </div>
+
+                        <label for="basic-url" class="form-label">Your vanity URL: </label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon3">https://example.com/users/
+                            </span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon4">$</span>
+                            <input type="text" class="form-control" placeholder="Amount" aria-label="Amount">
+                            <span class="input-group-text" id="basic-addon5">.00</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Username">
+                            <span class="input-group-text" id="basic-addon6">@</span>
+                            <input type="text" class="form-control" placeholder="Server">
+                        </div>
+
+                        <!-- text area -->
+                         <div class="input-group mb-3">
+                            <span class="input-group-text">With Textarea</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                         </div>
+
+                    </div>
+                </div>
+                <!-- Input group end -->
+
+                <!-- Sizing start -->
+                 <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light rounded h-100 p-4">
+                        <h6 class="mb-4">Sizing</h6>
+                        <input type="text" class="form-control form-control-lg mb-3" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+                        <input type="text" class="form-control mb-3" placeholder="Default input">
+                        <input type="text" class="form-control form-control-sm mb-3" placeholder=".form-control-sm">
+                    </div>
+                 </div>
+                <!-- Sizing end -->
+            </div>
+        </div>
+        <!-- Form end -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid pt-4 px-4">
+            <div class="bg-light">
+                <div class="row text-center">
+                    <div class="col-12">
+                        &copy; <a href="#">ADMIN DASHBOARD</a>, All Right Reserved.
+                        <br>
+                        Designed By <a href="#">Tepy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="../assets/lib/chart/chart.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"
+        integrity="sha512-k6/Bkb8Fxf/c1Tkyl39yJwcOZ1P4cRrJu77p83zJjN2Z55prbFHxPs9vN7q3l3+tSMGPDdoH51AEU8Vgo1cgAA=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css"
+        integrity="sha512-3JRrEUwaCkFUBLK1N8HehwQgu8e23jTH4np5NHOmQOobuC4ROQxFwFgBLTnhcnQRMs84muMh0PnnwXlPq5MGjg=="
+        crossorigin="anonymous" />
+    <script src="../assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../assets/script.js"></script>
+</body>
+
+</html>

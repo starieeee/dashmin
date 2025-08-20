@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart</title>
+    <!-- Style css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Google web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap">
+
+    <!-- Bootstrap CSS & Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+
+    <!-- libraries sheet -->
+    <link rel="stylesheet" href="../assets/lib/owlcarousel/assets/owl.carousel.min.css">
+</head>
+
+<body>
+    <!-- Button scroll to top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+    <!-- End of Button scroll to top -->
+    <div class="container-fluid position-relative bg-white d-flex p-0">
+        <!-- Sidebar start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-light navbar-light">
+                <a href="../index.html" class="navbar-brand mx-4 mb-3">
+                    <h4 class="text-primary"><i class="fa fa-hashtag me-2"></i>DASHBOARD</h4>
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                        <img src="../assets/img/pf1.jpg"
+                            class="rounded-circle" style="width: 30px;" alt="">
+                        <div
+                            class="bg-success rounded-circle border-2 border-white position-absolute end-0 bottom-0 p-1">
+                        </div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">Justin Bieber</h6>
+                        <span>Admin</span>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    <a href="../index.html" class="nav-item nav-link active">
+                        <i class="fa fa-tachometer-alt me-2"></i>Dashboard
+                    </a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-laptop me-2"></i>Elements
+                        </a>
+                        <div class="dropdown-menu bg-transparent border-0" data-bs-proper="none">
+                            <a href="button.html" class="dropdown-item">Buttons</a>
+                            <a href="typography.html" class="dropdown-item">Typography</a>
+                            <a href="element.html" class="dropdown-item">Other Elements</a>
+                        </div>
+                    </div>
+                    <a href="widget.html" class="nav-item nav-link">
+                        <i class="fa fa-th me-2"></i>Widgets
+                    </a>
+                    <a href="form.html" class="nav-item nav-link">
+                        <i class="fa fa-keyboard me-2"></i>Forms
+                    </a>
+                    <a href="table.html" class="nav-item nav-link">
+                        <i class="fa fa-table me-2"></i>Tables
+                    </a>
+                    <a href="chart.html" class="nav-item nav-link">
+                        <i class="fa fa-chart-bar me-2"></i>Charts
+                    </a>
+                    <div class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="far fa-file-alt me-2"></i>Pages
+                        </a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="signin.html" class="dropdown-item">Sign In</a>
+                            <a href="signup.html" class="dropdown-item">Sign Up</a>
+                            <a href="four0four.html" class="dropdown-item">404 Error</a>
+                            <a href="blankPage.html" class="dropdown-item">Blank Page</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- End of Sidebar -->
+    </div>
+
+    <div class="content">
+        <!-- Navbar start -->
+        <nav class="navbar navbar-expand bg-light sticky-top px-4 py-0">
+            <a href="" class="navbar-brand d-flex d-lg-none me-4">
+                <h2 class="text-primary mb-0">
+                    <i class="fa fa-hashtag"></i>
+                </h2>
+            </a>
+            <a href="#" class="sidebar-toggler flex-shrink-0" data-bs-toggle="sidebar">
+                <i class="fa fa-bars"></i>
+            </a>
+            <form href="" class="d-none d-md-flex ms-4">
+                <input type="search" class="form-control border-0" placeholder="Search">
+            </form>
+            <div class="navbar-nav align-items-center ms-auto">
+                <div class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="fa fa-envelope me-lg-2"></i>
+                        <span class="d-none d-lg-inline-flex">Message</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end-bg-light border-0 rounded-bottom m-0">
+                        <a href="" class="dropdown-item">
+                            <div class="d-flex align-items-center">
+                                <img src="../assets/img/pf1.jpg"
+                                    class="rounded-circle" style="width: 30px;" alt="">
+                                <div class="ms-2">
+                                    <h6>
+                                        Kitty send you a message
+                                    </h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="fa fa-bell me-lg-2"></i>
+                        <span class="d-none d-lg-inline-flex">Notification</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item">
+                            <h6 class="fw-normal mb-0">
+                                Profile Updated
+                            </h6>
+                            <small>15 minutes ago</small>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            <h6 class="fw-normal mb-0">
+                                New user added
+                            </h6>
+                            <small>55 minutes ago</small>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            See all Notification
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <img src="../assets/img/pf1.jpg"
+                            class="rounded-circle me-lg-2" style="width: 30px;" alt="">
+                        <span class="d-none d-lg-inline-flex">Justin Bieber</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item">My profile</a>
+                        <a href="#" class="dropdown-item">Setting</a>
+                        <a href="#" class="dropdown-item">Log out</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar end -->
+
+        <!-- Form start -->
+        <div class="container-fluid pt-4 px-4">
+            <div class="row g-4">
+                <!-- Single Line Chart start -->
+                <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light text-center rounded p-4">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <h6 class="mb-0">
+                                Single Line
+                            </h6>
+                            <a href="" class="text-decoration-none">Show All</a>
+                        </div>
+                        <canvas id="line-chart"></canvas>
+                    </div>
+                </div>
+                <!-- Single Line Chart end -->
+
+                <!-- Multiple line chart start -->
+                 <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light text-center rounded p-4">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <h6 class="mb-0">
+                                Multiple Line
+                            </h6>
+                            <a href="" class="text-decoration-none">Show All</a>
+                        </div>
+                        <canvas id="multiple-chart"></canvas>
+                    </div>
+                </div>
+                <!-- Multiple line chart end -->
+
+                <!-- Single bar chart start -->
+                 <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light text-center rounded p-4">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <h6 class="mb-0">
+                                Single Bar Chart
+                            </h6>
+                            <a href="" class="text-decoration-none">Show All</a>
+                        </div>
+                        <canvas id="single-bar-chart"></canvas>
+                    </div>
+                </div>
+                <!-- Single bar chart end -->
+
+                <!-- Multiple bar chart start -->
+                 <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light text-center rounded p-4">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <h6 class="mb-0">
+                                Multiple Bar Chart
+                            </h6>
+                            <a href="" class="text-decoration-none">Show All</a>
+                        </div>
+                        <canvas id="multiple-bar-chart"></canvas>
+                    </div>
+                </div>
+                <!-- Multiple bar chart end -->
+
+                <!-- Pie chart start -->
+                 <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light text-center rounded p-4">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <h6 class="mb-0">
+                                Pie Chart
+                            </h6>
+                            <a href="" class="text-decoration-none">Show All</a>
+                        </div>
+                        <canvas id="pie-chart"></canvas>
+                    </div>
+                </div>
+                <!-- Pie chart end -->
+
+                <!-- doughnut chart start -->
+                 <div class="col-sm-12 col-xl-6">
+                    <div class="bg-light text-center rounded p-4">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <h6 class="mb-0">
+                                Doughnut Chart
+                            </h6>
+                            <a href="" class="text-decoration-none">Show All</a>
+                        </div>
+                        <canvas id="d-chart"></canvas>
+                    </div>
+                </div>
+                <!-- doughnut chart end -->
+
+            </div>
+        </div>
+        <!-- Form end -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid pt-4 px-4">
+            <div class="bg-light">
+                <div class="row text-center">
+                    <div class="col-12">
+                        &copy; <a href="#">ADMIN DASHBOARD</a>, All Right Reserved.
+                        <br>
+                        Designed By <a href="#">Tepy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="../assets/lib/chart/chart.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"
+        integrity="sha512-k6/Bkb8Fxf/c1Tkyl39yJwcOZ1P4cRrJu77p83zJjN2Z55prbFHxPs9vN7q3l3+tSMGPDdoH51AEU8Vgo1cgAA=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css"
+        integrity="sha512-3JRrEUwaCkFUBLK1N8HehwQgu8e23jTH4np5NHOmQOobuC4ROQxFwFgBLTnhcnQRMs84muMh0PnnwXlPq5MGjg=="
+        crossorigin="anonymous" />
+    <script src="../assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../assets/script.js"></script>
+</body>
+
+</html>
